@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./vue.js">
+  </script>
+  </head>
+        <body>
+        <h1><pre class="tab">        Calculator</pre></h1><hr/>
+        <div id="app">
+          <div class="littlebox">{{title1}}</div>
+        <div class="box">{{title}}</div>
+        <div class="grid-container">
+          <button class="button-operation" v-on:click="percent()">%</button>
+          <button class ="button-clear" v-on:click="clr(true)">CE</button>
+          <button class ="button-clear" v-on:click="clr(true)">C</button>
+          <button class ="button-clear" v-on:click="clr(false)">x</button>
+          <button class="button-operation" v-on:click="rev()">1/x</button>
+          <button class="button-operation" v-on:click="sqr()">x<sup>2</sup></button>
+          <button class="button-operation" v-on:click="sqrt()"><sup>2</sup>√x</button>
+          <button class="button-operation"v-on:click="setOp('/')"><h3>÷</h3></button>
+          <button class="button-num" v-on:click="addNum(7)">7</button>
+          <button class="button-num" v-on:click="addNum(8)">8</button>
+          <button class="button-num" v-on:click="addNum(9)">9</button>
+          <button class="button-operation"v-on:click="setOp('*')">×</button>
+          <button class="button-num" v-on:click="addNum(4)">4</button>
+          <button class="button-num" v-on:click="addNum(5)">5</button>
+          <button class="button-num" v-on:click="addNum(6)">6</button>
+          <button class="button-operation"v-on:click="setOp('-')"><b>−</b></button>
+          <button class="button-num"v-on:click="addNum(1)">1</button>
+          <button class="button-num"v-on:click="addNum(2)">2</button>
+          <button class="button-num"v-on:click="addNum(3)">3</button>
+          <button class="button-operation"v-on:click="setOp('+')"><h3>+</h3></button>
+          <button class="button-num"v-on:click="negPos()"><h5><sup>+</sup>/<sub>-</sub></h5></button>
+          <button class="button-num"v-on:click="addNum(0)">0</button>
+          <button class="button-decimal"v-on:click="addPoint()"><b>.</b></button>
+          <button class="button-equal"v-on:click="equl()"><h3>=</h3></button></div>
+        </div>
+          <script src="./app.js">
+          </script>
+        </body>
+        <html>
